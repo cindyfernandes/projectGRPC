@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_package = "com.smart_home";
+
+service SmartLighting {
+  rpc ToggleLight (ToggleLightRequest) returns (ToggleLightResponse) {}
+  rpc SetSchedule (stream SetScheduleRequest) returns (SetScheduleResponse) {}
+}
+
+message ToggleLightRequest {
+  string light_id = 1;
+  bool intended_state = 2;
+}
+
+message ToggleLightResponse {
+  bool success = 1;
+}
+
+message SetScheduleRequest {
+  string light_id = 1;
+  bool intended_state = 2;
+  string schedule_time = 3;
+}
+
+message SetScheduleResponse {
+  bool success = 1;
+}
