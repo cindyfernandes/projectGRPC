@@ -1,2 +1,8 @@
-/Users/cindyfernandes/Desktop/Project/src/main/java/com/smart_home/User.java
-/Users/cindyfernandes/Desktop/Project/src/main/java/com/smart_home/SmartLightingGrpc.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/server/SmartHomeServer.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/com/smart_home/SmartSecurityOuterClass.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/user/UserService.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/com/smart_home/SmartThermostatGrpc.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/com/smart_home/SmartThermostatOuterClass.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/com/smart_home/SmartLightingGrpc.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/com/smart_home/User.java
+/Users/cindyfernandes/git/repository/grpcCA1/src/main/java/com/smart_home/SmartSecurityGrpc.java

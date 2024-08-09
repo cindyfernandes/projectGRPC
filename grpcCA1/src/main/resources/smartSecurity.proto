@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option java_package = "com.smart_home";
+
+// Define the SmartSecurity service
+service SmartSecurity {
+  // RPC method to arm the security system
+  rpc ArmSystem (ArmSystemRequest) returns (ArmSystemResponse) {}
+
+  // RPC method to get the status of a sensor
+  rpc GetSensorStatus (GetSensorStatusRequest) returns (GetSensorStatusResponse) {}
+}
+
+// Message to request arming the system
+message ArmSystemRequest {
+  string security_code = 1;
+  string user_id = 2;
+}
+
+// Response message for arming the system
+message ArmSystemResponse {
+  bool success = 1;
+}
+
+// Message to request the status of a sensor
+message GetSensorStatusRequest {
+  string sensor_id = 1;
+}
+
+// Response message for getting the status of a sensor
+message GetSensorStatusResponse {
+  string sensor_id = 1;
+  bool sensor_status = 2;
+}

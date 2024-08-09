@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_package = "com.smart_home";
+
+// Define the SmartThermostat service
+service SmartThermostat {
+  // RPC method to get the current temperature
+  rpc GetTemperature (GetTemperatureRequest) returns (GetTemperatureResponse) {}
+
+  // RPC method to set a specific temperature
+  rpc SetTemperature (SetTemperatureRequest) returns (SetTemperatureResponse) {}
+
+  // Bidirectional streaming RPC method to adjust the temperature
+  rpc AdjustTemperature (stream AdjustTemperatureRequest) returns (stream AdjustTemperatureResponse) {}
+}
+
+// Message for requesting the current temperature
+message GetTemperatureRequest {}
+
+// Response message containing the current temperature
+message GetTemperatureResponse {
+  float current_temperature = 1;
+}
+
+// Message for setting a specific temperature
+message SetTemperatureRequest {
+  float intended_temperature = 1;
+}
+
+// Response message for setting a specific temperature
+message SetTemperatureResponse {
+  bool success = 1;
+}
+
+// Message for adjusting the temperature
+message AdjustTemperatureRequest {
+  float temperature_adjustment = 1;
+}
+
+// Response message for the current temperature after adjustment
+message AdjustTemperatureResponse {
+  float current_temperature = 1;
+}
