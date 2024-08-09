@@ -7,6 +7,8 @@ import grpc_files.SmartThermostatOuterClass.GetTemperatureRequest;
 import grpc_files.SmartThermostatOuterClass.GetTemperatureResponse;
 import grpc_files.SmartThermostatOuterClass.SetTemperatureRequest;
 import grpc_files.SmartThermostatOuterClass.SetTemperatureResponse;
+import io.grpc.Metadata;
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 
 public class SmartThermostat extends SmartThermostatImplBase {
@@ -14,15 +16,27 @@ public class SmartThermostat extends SmartThermostatImplBase {
 	@Override
 	public void getTemperature(GetTemperatureRequest request, StreamObserver<GetTemperatureResponse> responseObserver) {
 		
-		// Logic to get the current temperature
-        float currentTemperature = 22.5f; // Example temperature
+		//Metadata
+		try {
+	        // Add metadata to add client ID
+	        Metadata metadata = new Metadata();
+	        Metadata.Key<String> key = Metadata.Key.of("client-id", Metadata.ASCII_STRING_MARSHALLER);
+	        metadata.put(key, "SmartHomeClient");
 
-        GetTemperatureResponse response = GetTemperatureResponse.newBuilder()
-                .setCurrentTemperature(currentTemperature)
-                .build();
+	        // Logic to get the current temperature
+	        float currentTemperature = 22.5f; // Example temperature
 
-        responseObserver.onNext(response);
-        responseObserver.onCompleted();	
+	        GetTemperatureResponse response = GetTemperatureResponse.newBuilder()
+	                .setCurrentTemperature(currentTemperature)
+	                .build();
+
+	        responseObserver.onNext(response);
+	        responseObserver.onCompleted();
+
+	    } catch (Exception e) {
+	        // Handle errors and send appropriate status back to the client
+	        responseObserver.onError(Status.INTERNAL.withDescription("An unexpected error occurred").asRuntimeException());
+	    }
     }
 
 	@Override

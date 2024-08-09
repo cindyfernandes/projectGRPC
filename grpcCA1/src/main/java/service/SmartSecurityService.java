@@ -5,6 +5,7 @@ import grpc_files.SmartSecurityOuterClass.ArmSystemRequest;
 import grpc_files.SmartSecurityOuterClass.ArmSystemResponse;
 import grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest;
 import grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse;
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 
 public class SmartSecurityService  extends SmartSecurityImplBase {
@@ -13,20 +14,35 @@ public class SmartSecurityService  extends SmartSecurityImplBase {
 	@Override
 	public void armSystem(ArmSystemRequest request, StreamObserver<ArmSystemResponse> responseObserver) {
 		
-		System.out.println("Inside security");
-		
-		String securityCode = request.getSecurityCode();
-        String userId = request.getUserId();
+		// Handle any unexpected errors
+		try {
+	        String securityCode = request.getSecurityCode();
+	        String userId = request.getUserId();
 
-        // Logic to arm the security system
-        boolean success = true; // Assume the operation was successful for now
+	        // Simulate checking the security code
+	        boolean isValidCode = "1234".equals(securityCode); // Example valid code
+	        if (!isValidCode) {
+	            responseObserver.onError(Status.PERMISSION_DENIED
+	                .withDescription("Invalid security code.")
+	                .asRuntimeException());
+	            return;
+	        }
 
-        ArmSystemResponse response = ArmSystemResponse.newBuilder()
-                .setSuccess(success)
-                .build();
+	        // Logic to arm the system
+	        boolean success = true; // Assume the operation was successful
 
-        responseObserver.onNext(response);
-        responseObserver.onCompleted();
+	        ArmSystemResponse response = ArmSystemResponse.newBuilder()
+	                .setSuccess(success)
+	                .build();
+
+	        responseObserver.onNext(response);
+	        responseObserver.onCompleted();
+	    } catch (Exception e) {
+	        // Handle any unexpected errors
+	        responseObserver.onError(Status.INTERNAL
+	            .withDescription("An unexpected error occurred while arming the system.")
+	            .asRuntimeException());
+	    }
 	}
 
 	@Override
