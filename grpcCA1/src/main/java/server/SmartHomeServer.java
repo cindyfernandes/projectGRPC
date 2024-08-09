@@ -2,7 +2,7 @@ package server;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import user.UserService;
+import service.UserService;
 
 import java.io.IOException;
 

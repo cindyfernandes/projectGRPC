@@ -16,9 +16,6 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
- * <pre>
- * Define the SmartSecurity service
- * </pre>
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.15.0)",
@@ -118,9 +115,6 @@ public final class SmartSecurityGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartSecurity service
-   * </pre>
    */
   public static abstract class SmartSecurityImplBase implements io.grpc.BindableService {
 
@@ -165,9 +159,6 @@ public final class SmartSecurityGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartSecurity service
-   * </pre>
    */
   public static final class SmartSecurityStub extends io.grpc.stub.AbstractStub<SmartSecurityStub> {
     private SmartSecurityStub(io.grpc.Channel channel) {
@@ -209,9 +200,6 @@ public final class SmartSecurityGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartSecurity service
-   * </pre>
    */
   public static final class SmartSecurityBlockingStub extends io.grpc.stub.AbstractStub<SmartSecurityBlockingStub> {
     private SmartSecurityBlockingStub(io.grpc.Channel channel) {
@@ -251,9 +239,6 @@ public final class SmartSecurityGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartSecurity service
-   * </pre>
    */
   public static final class SmartSecurityFutureStub extends io.grpc.stub.AbstractStub<SmartSecurityFutureStub> {
     private SmartSecurityFutureStub(io.grpc.Channel channel) {

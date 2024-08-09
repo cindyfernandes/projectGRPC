@@ -1,12 +1,19 @@
 syntax = "proto3";
 
+//Specifies the package I want to use for our generated Java classes
 option java_package = "com.smart_home";
 
+//Service 1:Smart Lighting - Automate and manage the lighting system in the smart home.
+
 service SmartLighting {
+ //Unary RPC method
   rpc ToggleLight (ToggleLightRequest) returns (ToggleLightResponse) {}
+
+ //Unary RPC method
   rpc SetSchedule (stream SetScheduleRequest) returns (SetScheduleResponse) {}
 }
 
+//Unary RPC method toggles the state of a single light or a set of lights.
 message ToggleLightRequest {
   string light_id = 1;
   bool intended_state = 2;
@@ -15,7 +22,7 @@ message ToggleLightRequest {
 message ToggleLightResponse {
   bool success = 1;
 }
-
+//This is a client streaming RPC method, user can programme when the lights will turn on and off.
 message SetScheduleRequest {
   string light_id = 1;
   bool intended_state = 2;

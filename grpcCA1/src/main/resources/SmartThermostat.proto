@@ -2,8 +2,11 @@ syntax = "proto3";
 
 option java_package = "com.smart_home";
 
-// Define the SmartThermostat service
+//System 3: SmartThermostat - The smart home’s HVAC (heating, ventilation, and air conditioning) system
+//allows users to set up schedules for automated adjustments based on occupancy or preferences.
+
 service SmartThermostat {
+
   // RPC method to get the current temperature
   rpc GetTemperature (GetTemperatureRequest) returns (GetTemperatureResponse) {}
 
@@ -22,17 +25,18 @@ message GetTemperatureResponse {
   float current_temperature = 1;
 }
 
-// Message for setting a specific temperature
+// Setting a specific temperature
+//Message
 message SetTemperatureRequest {
   float intended_temperature = 1;
 }
-
-// Response message for setting a specific temperature
+//Response
 message SetTemperatureResponse {
   bool success = 1;
 }
 
-// Message for adjusting the temperature
+//Adjusting the temperature
+//Message
 message AdjustTemperatureRequest {
   float temperature_adjustment = 1;
 }

@@ -932,7 +932,8 @@ public final class SmartThermostatOuterClass {
   }
   /**
    * <pre>
-   * Message for setting a specific temperature
+   * Setting a specific temperature
+   *Message
    * </pre>
    *
    * Protobuf type {@code SetTemperatureRequest}
@@ -1181,7 +1182,8 @@ public final class SmartThermostatOuterClass {
     }
     /**
      * <pre>
-     * Message for setting a specific temperature
+     * Setting a specific temperature
+     *Message
      * </pre>
      *
      * Protobuf type {@code SetTemperatureRequest}
@@ -1419,7 +1421,7 @@ public final class SmartThermostatOuterClass {
   }
   /**
    * <pre>
-   * Response message for setting a specific temperature
+   *Response
    * </pre>
    *
    * Protobuf type {@code SetTemperatureResponse}
@@ -1666,7 +1668,7 @@ public final class SmartThermostatOuterClass {
     }
     /**
      * <pre>
-     * Response message for setting a specific temperature
+     *Response
      * </pre>
      *
      * Protobuf type {@code SetTemperatureResponse}
@@ -1904,7 +1906,8 @@ public final class SmartThermostatOuterClass {
   }
   /**
    * <pre>
-   * Message for adjusting the temperature
+   *Adjusting the temperature
+   *Message
    * </pre>
    *
    * Protobuf type {@code AdjustTemperatureRequest}
@@ -2153,7 +2156,8 @@ public final class SmartThermostatOuterClass {
     }
     /**
      * <pre>
-     * Message for adjusting the temperature
+     *Adjusting the temperature
+     *Message
      * </pre>
      *
      * Protobuf type {@code AdjustTemperatureRequest}

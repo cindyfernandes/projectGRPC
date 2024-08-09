@@ -2,7 +2,9 @@ syntax = "proto3";
 
 option java_package = "com.smart_home";
 
-// Define the SmartSecurity service
+// System 2: SmartSecurity service- The objective is maintain an eye on the smart home
+// and protect it against intruders and other dangers.
+
 service SmartSecurity {
   // RPC method to arm the security system
   rpc ArmSystem (ArmSystemRequest) returns (ArmSystemResponse) {}

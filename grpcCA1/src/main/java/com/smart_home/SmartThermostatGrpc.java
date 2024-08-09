@@ -16,9 +16,6 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
- * <pre>
- * Define the SmartThermostat service
- * </pre>
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.15.0)",
@@ -150,9 +147,6 @@ public final class SmartThermostatGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartThermostat service
-   * </pre>
    */
   public static abstract class SmartThermostatImplBase implements io.grpc.BindableService {
 
@@ -214,9 +208,6 @@ public final class SmartThermostatGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartThermostat service
-   * </pre>
    */
   public static final class SmartThermostatStub extends io.grpc.stub.AbstractStub<SmartThermostatStub> {
     private SmartThermostatStub(io.grpc.Channel channel) {
@@ -269,9 +260,6 @@ public final class SmartThermostatGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartThermostat service
-   * </pre>
    */
   public static final class SmartThermostatBlockingStub extends io.grpc.stub.AbstractStub<SmartThermostatBlockingStub> {
     private SmartThermostatBlockingStub(io.grpc.Channel channel) {
@@ -311,9 +299,6 @@ public final class SmartThermostatGrpc {
   }
 
   /**
-   * <pre>
-   * Define the SmartThermostat service
-   * </pre>
    */
   public static final class SmartThermostatFutureStub extends io.grpc.stub.AbstractStub<SmartThermostatFutureStub> {
     private SmartThermostatFutureStub(io.grpc.Channel channel) {
