@@ -1,13 +1,12 @@
 package service;
 
-import com.smart_home.SmartThermostatGrpc.SmartThermostatImplBase;
-import com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest;
-import com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse;
-import com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest;
-import com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse;
-import com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest;
-import com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse;
-
+import grpc_files.SmartThermostatGrpc.SmartThermostatImplBase;
+import grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest;
+import grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse;
+import grpc_files.SmartThermostatOuterClass.GetTemperatureRequest;
+import grpc_files.SmartThermostatOuterClass.GetTemperatureResponse;
+import grpc_files.SmartThermostatOuterClass.SetTemperatureRequest;
+import grpc_files.SmartThermostatOuterClass.SetTemperatureResponse;
 import io.grpc.stub.StreamObserver;
 
 public class SmartThermostat extends SmartThermostatImplBase {

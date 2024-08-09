@@ -1,4 +1,4 @@
-package server;
+package service_registration;
 
 import java.io.IOException;
 import java.net.InetAddress;

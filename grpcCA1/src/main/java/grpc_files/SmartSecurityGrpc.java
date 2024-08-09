@@ -1,4 +1,4 @@
-package com.smart_home;
+package grpc_files;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -27,30 +27,30 @@ public final class SmartSecurityGrpc {
   public static final String SERVICE_NAME = "SmartSecurity";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.smart_home.SmartSecurityOuterClass.ArmSystemRequest,
-      com.smart_home.SmartSecurityOuterClass.ArmSystemResponse> getArmSystemMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc_files.SmartSecurityOuterClass.ArmSystemRequest,
+      grpc_files.SmartSecurityOuterClass.ArmSystemResponse> getArmSystemMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ArmSystem",
-      requestType = com.smart_home.SmartSecurityOuterClass.ArmSystemRequest.class,
-      responseType = com.smart_home.SmartSecurityOuterClass.ArmSystemResponse.class,
+      requestType = grpc_files.SmartSecurityOuterClass.ArmSystemRequest.class,
+      responseType = grpc_files.SmartSecurityOuterClass.ArmSystemResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.smart_home.SmartSecurityOuterClass.ArmSystemRequest,
-      com.smart_home.SmartSecurityOuterClass.ArmSystemResponse> getArmSystemMethod() {
-    io.grpc.MethodDescriptor<com.smart_home.SmartSecurityOuterClass.ArmSystemRequest, com.smart_home.SmartSecurityOuterClass.ArmSystemResponse> getArmSystemMethod;
+  public static io.grpc.MethodDescriptor<grpc_files.SmartSecurityOuterClass.ArmSystemRequest,
+      grpc_files.SmartSecurityOuterClass.ArmSystemResponse> getArmSystemMethod() {
+    io.grpc.MethodDescriptor<grpc_files.SmartSecurityOuterClass.ArmSystemRequest, grpc_files.SmartSecurityOuterClass.ArmSystemResponse> getArmSystemMethod;
     if ((getArmSystemMethod = SmartSecurityGrpc.getArmSystemMethod) == null) {
       synchronized (SmartSecurityGrpc.class) {
         if ((getArmSystemMethod = SmartSecurityGrpc.getArmSystemMethod) == null) {
           SmartSecurityGrpc.getArmSystemMethod = getArmSystemMethod = 
-              io.grpc.MethodDescriptor.<com.smart_home.SmartSecurityOuterClass.ArmSystemRequest, com.smart_home.SmartSecurityOuterClass.ArmSystemResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc_files.SmartSecurityOuterClass.ArmSystemRequest, grpc_files.SmartSecurityOuterClass.ArmSystemResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "SmartSecurity", "ArmSystem"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartSecurityOuterClass.ArmSystemRequest.getDefaultInstance()))
+                  grpc_files.SmartSecurityOuterClass.ArmSystemRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartSecurityOuterClass.ArmSystemResponse.getDefaultInstance()))
+                  grpc_files.SmartSecurityOuterClass.ArmSystemResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SmartSecurityMethodDescriptorSupplier("ArmSystem"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class SmartSecurityGrpc {
      return getArmSystemMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest,
-      com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse> getGetSensorStatusMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest,
+      grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse> getGetSensorStatusMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetSensorStatus",
-      requestType = com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest.class,
-      responseType = com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse.class,
+      requestType = grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest.class,
+      responseType = grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest,
-      com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse> getGetSensorStatusMethod() {
-    io.grpc.MethodDescriptor<com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest, com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse> getGetSensorStatusMethod;
+  public static io.grpc.MethodDescriptor<grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest,
+      grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse> getGetSensorStatusMethod() {
+    io.grpc.MethodDescriptor<grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest, grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse> getGetSensorStatusMethod;
     if ((getGetSensorStatusMethod = SmartSecurityGrpc.getGetSensorStatusMethod) == null) {
       synchronized (SmartSecurityGrpc.class) {
         if ((getGetSensorStatusMethod = SmartSecurityGrpc.getGetSensorStatusMethod) == null) {
           SmartSecurityGrpc.getGetSensorStatusMethod = getGetSensorStatusMethod = 
-              io.grpc.MethodDescriptor.<com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest, com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest, grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "SmartSecurity", "GetSensorStatus"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest.getDefaultInstance()))
+                  grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse.getDefaultInstance()))
+                  grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SmartSecurityMethodDescriptorSupplier("GetSensorStatus"))
                   .build();
           }
@@ -123,8 +123,8 @@ public final class SmartSecurityGrpc {
      * RPC method to arm the security system
      * </pre>
      */
-    public void armSystem(com.smart_home.SmartSecurityOuterClass.ArmSystemRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartSecurityOuterClass.ArmSystemResponse> responseObserver) {
+    public void armSystem(grpc_files.SmartSecurityOuterClass.ArmSystemRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartSecurityOuterClass.ArmSystemResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getArmSystemMethod(), responseObserver);
     }
 
@@ -133,8 +133,8 @@ public final class SmartSecurityGrpc {
      * RPC method to get the status of a sensor
      * </pre>
      */
-    public void getSensorStatus(com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse> responseObserver) {
+    public void getSensorStatus(grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetSensorStatusMethod(), responseObserver);
     }
 
@@ -144,15 +144,15 @@ public final class SmartSecurityGrpc {
             getArmSystemMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.smart_home.SmartSecurityOuterClass.ArmSystemRequest,
-                com.smart_home.SmartSecurityOuterClass.ArmSystemResponse>(
+                grpc_files.SmartSecurityOuterClass.ArmSystemRequest,
+                grpc_files.SmartSecurityOuterClass.ArmSystemResponse>(
                   this, METHODID_ARM_SYSTEM)))
           .addMethod(
             getGetSensorStatusMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest,
-                com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse>(
+                grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest,
+                grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse>(
                   this, METHODID_GET_SENSOR_STATUS)))
           .build();
     }
@@ -181,8 +181,8 @@ public final class SmartSecurityGrpc {
      * RPC method to arm the security system
      * </pre>
      */
-    public void armSystem(com.smart_home.SmartSecurityOuterClass.ArmSystemRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartSecurityOuterClass.ArmSystemResponse> responseObserver) {
+    public void armSystem(grpc_files.SmartSecurityOuterClass.ArmSystemRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartSecurityOuterClass.ArmSystemResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getArmSystemMethod(), getCallOptions()), request, responseObserver);
     }
@@ -192,8 +192,8 @@ public final class SmartSecurityGrpc {
      * RPC method to get the status of a sensor
      * </pre>
      */
-    public void getSensorStatus(com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse> responseObserver) {
+    public void getSensorStatus(grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetSensorStatusMethod(), getCallOptions()), request, responseObserver);
     }
@@ -222,7 +222,7 @@ public final class SmartSecurityGrpc {
      * RPC method to arm the security system
      * </pre>
      */
-    public com.smart_home.SmartSecurityOuterClass.ArmSystemResponse armSystem(com.smart_home.SmartSecurityOuterClass.ArmSystemRequest request) {
+    public grpc_files.SmartSecurityOuterClass.ArmSystemResponse armSystem(grpc_files.SmartSecurityOuterClass.ArmSystemRequest request) {
       return blockingUnaryCall(
           getChannel(), getArmSystemMethod(), getCallOptions(), request);
     }
@@ -232,7 +232,7 @@ public final class SmartSecurityGrpc {
      * RPC method to get the status of a sensor
      * </pre>
      */
-    public com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse getSensorStatus(com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest request) {
+    public grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse getSensorStatus(grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetSensorStatusMethod(), getCallOptions(), request);
     }
@@ -261,8 +261,8 @@ public final class SmartSecurityGrpc {
      * RPC method to arm the security system
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.smart_home.SmartSecurityOuterClass.ArmSystemResponse> armSystem(
-        com.smart_home.SmartSecurityOuterClass.ArmSystemRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc_files.SmartSecurityOuterClass.ArmSystemResponse> armSystem(
+        grpc_files.SmartSecurityOuterClass.ArmSystemRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getArmSystemMethod(), getCallOptions()), request);
     }
@@ -272,8 +272,8 @@ public final class SmartSecurityGrpc {
      * RPC method to get the status of a sensor
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse> getSensorStatus(
-        com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse> getSensorStatus(
+        grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetSensorStatusMethod(), getCallOptions()), request);
     }
@@ -300,12 +300,12 @@ public final class SmartSecurityGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_ARM_SYSTEM:
-          serviceImpl.armSystem((com.smart_home.SmartSecurityOuterClass.ArmSystemRequest) request,
-              (io.grpc.stub.StreamObserver<com.smart_home.SmartSecurityOuterClass.ArmSystemResponse>) responseObserver);
+          serviceImpl.armSystem((grpc_files.SmartSecurityOuterClass.ArmSystemRequest) request,
+              (io.grpc.stub.StreamObserver<grpc_files.SmartSecurityOuterClass.ArmSystemResponse>) responseObserver);
           break;
         case METHODID_GET_SENSOR_STATUS:
-          serviceImpl.getSensorStatus((com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest) request,
-              (io.grpc.stub.StreamObserver<com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse>) responseObserver);
+          serviceImpl.getSensorStatus((grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest) request,
+              (io.grpc.stub.StreamObserver<grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -329,7 +329,7 @@ public final class SmartSecurityGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.smart_home.SmartSecurityOuterClass.getDescriptor();
+      return grpc_files.SmartSecurityOuterClass.getDescriptor();
     }
 
     @java.lang.Override

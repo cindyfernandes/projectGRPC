@@ -1,4 +1,4 @@
-package com.smart_home;
+package grpc_files;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -27,30 +27,30 @@ public final class SmartLightingGrpc {
   public static final String SERVICE_NAME = "SmartLighting";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.smart_home.SmartLightingOuterClass.ToggleLightRequest,
-      com.smart_home.SmartLightingOuterClass.ToggleLightResponse> getToggleLightMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc_files.SmartLightingOuterClass.ToggleLightRequest,
+      grpc_files.SmartLightingOuterClass.ToggleLightResponse> getToggleLightMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ToggleLight",
-      requestType = com.smart_home.SmartLightingOuterClass.ToggleLightRequest.class,
-      responseType = com.smart_home.SmartLightingOuterClass.ToggleLightResponse.class,
+      requestType = grpc_files.SmartLightingOuterClass.ToggleLightRequest.class,
+      responseType = grpc_files.SmartLightingOuterClass.ToggleLightResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.smart_home.SmartLightingOuterClass.ToggleLightRequest,
-      com.smart_home.SmartLightingOuterClass.ToggleLightResponse> getToggleLightMethod() {
-    io.grpc.MethodDescriptor<com.smart_home.SmartLightingOuterClass.ToggleLightRequest, com.smart_home.SmartLightingOuterClass.ToggleLightResponse> getToggleLightMethod;
+  public static io.grpc.MethodDescriptor<grpc_files.SmartLightingOuterClass.ToggleLightRequest,
+      grpc_files.SmartLightingOuterClass.ToggleLightResponse> getToggleLightMethod() {
+    io.grpc.MethodDescriptor<grpc_files.SmartLightingOuterClass.ToggleLightRequest, grpc_files.SmartLightingOuterClass.ToggleLightResponse> getToggleLightMethod;
     if ((getToggleLightMethod = SmartLightingGrpc.getToggleLightMethod) == null) {
       synchronized (SmartLightingGrpc.class) {
         if ((getToggleLightMethod = SmartLightingGrpc.getToggleLightMethod) == null) {
           SmartLightingGrpc.getToggleLightMethod = getToggleLightMethod = 
-              io.grpc.MethodDescriptor.<com.smart_home.SmartLightingOuterClass.ToggleLightRequest, com.smart_home.SmartLightingOuterClass.ToggleLightResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc_files.SmartLightingOuterClass.ToggleLightRequest, grpc_files.SmartLightingOuterClass.ToggleLightResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "SmartLighting", "ToggleLight"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartLightingOuterClass.ToggleLightRequest.getDefaultInstance()))
+                  grpc_files.SmartLightingOuterClass.ToggleLightRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartLightingOuterClass.ToggleLightResponse.getDefaultInstance()))
+                  grpc_files.SmartLightingOuterClass.ToggleLightResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SmartLightingMethodDescriptorSupplier("ToggleLight"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class SmartLightingGrpc {
      return getToggleLightMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.smart_home.SmartLightingOuterClass.SetScheduleRequest,
-      com.smart_home.SmartLightingOuterClass.SetScheduleResponse> getSetScheduleMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc_files.SmartLightingOuterClass.SetScheduleRequest,
+      grpc_files.SmartLightingOuterClass.SetScheduleResponse> getSetScheduleMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SetSchedule",
-      requestType = com.smart_home.SmartLightingOuterClass.SetScheduleRequest.class,
-      responseType = com.smart_home.SmartLightingOuterClass.SetScheduleResponse.class,
+      requestType = grpc_files.SmartLightingOuterClass.SetScheduleRequest.class,
+      responseType = grpc_files.SmartLightingOuterClass.SetScheduleResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<com.smart_home.SmartLightingOuterClass.SetScheduleRequest,
-      com.smart_home.SmartLightingOuterClass.SetScheduleResponse> getSetScheduleMethod() {
-    io.grpc.MethodDescriptor<com.smart_home.SmartLightingOuterClass.SetScheduleRequest, com.smart_home.SmartLightingOuterClass.SetScheduleResponse> getSetScheduleMethod;
+  public static io.grpc.MethodDescriptor<grpc_files.SmartLightingOuterClass.SetScheduleRequest,
+      grpc_files.SmartLightingOuterClass.SetScheduleResponse> getSetScheduleMethod() {
+    io.grpc.MethodDescriptor<grpc_files.SmartLightingOuterClass.SetScheduleRequest, grpc_files.SmartLightingOuterClass.SetScheduleResponse> getSetScheduleMethod;
     if ((getSetScheduleMethod = SmartLightingGrpc.getSetScheduleMethod) == null) {
       synchronized (SmartLightingGrpc.class) {
         if ((getSetScheduleMethod = SmartLightingGrpc.getSetScheduleMethod) == null) {
           SmartLightingGrpc.getSetScheduleMethod = getSetScheduleMethod = 
-              io.grpc.MethodDescriptor.<com.smart_home.SmartLightingOuterClass.SetScheduleRequest, com.smart_home.SmartLightingOuterClass.SetScheduleResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc_files.SmartLightingOuterClass.SetScheduleRequest, grpc_files.SmartLightingOuterClass.SetScheduleResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "SmartLighting", "SetSchedule"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartLightingOuterClass.SetScheduleRequest.getDefaultInstance()))
+                  grpc_files.SmartLightingOuterClass.SetScheduleRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartLightingOuterClass.SetScheduleResponse.getDefaultInstance()))
+                  grpc_files.SmartLightingOuterClass.SetScheduleResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SmartLightingMethodDescriptorSupplier("SetSchedule"))
                   .build();
           }
@@ -123,8 +123,8 @@ public final class SmartLightingGrpc {
      *Unary RPC method
      * </pre>
      */
-    public void toggleLight(com.smart_home.SmartLightingOuterClass.ToggleLightRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.ToggleLightResponse> responseObserver) {
+    public void toggleLight(grpc_files.SmartLightingOuterClass.ToggleLightRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.ToggleLightResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getToggleLightMethod(), responseObserver);
     }
 
@@ -133,8 +133,8 @@ public final class SmartLightingGrpc {
      *Unary RPC method
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.SetScheduleRequest> setSchedule(
-        io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.SetScheduleResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.SetScheduleRequest> setSchedule(
+        io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.SetScheduleResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getSetScheduleMethod(), responseObserver);
     }
 
@@ -144,15 +144,15 @@ public final class SmartLightingGrpc {
             getToggleLightMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.smart_home.SmartLightingOuterClass.ToggleLightRequest,
-                com.smart_home.SmartLightingOuterClass.ToggleLightResponse>(
+                grpc_files.SmartLightingOuterClass.ToggleLightRequest,
+                grpc_files.SmartLightingOuterClass.ToggleLightResponse>(
                   this, METHODID_TOGGLE_LIGHT)))
           .addMethod(
             getSetScheduleMethod(),
             asyncClientStreamingCall(
               new MethodHandlers<
-                com.smart_home.SmartLightingOuterClass.SetScheduleRequest,
-                com.smart_home.SmartLightingOuterClass.SetScheduleResponse>(
+                grpc_files.SmartLightingOuterClass.SetScheduleRequest,
+                grpc_files.SmartLightingOuterClass.SetScheduleResponse>(
                   this, METHODID_SET_SCHEDULE)))
           .build();
     }
@@ -181,8 +181,8 @@ public final class SmartLightingGrpc {
      *Unary RPC method
      * </pre>
      */
-    public void toggleLight(com.smart_home.SmartLightingOuterClass.ToggleLightRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.ToggleLightResponse> responseObserver) {
+    public void toggleLight(grpc_files.SmartLightingOuterClass.ToggleLightRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.ToggleLightResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getToggleLightMethod(), getCallOptions()), request, responseObserver);
     }
@@ -192,8 +192,8 @@ public final class SmartLightingGrpc {
      *Unary RPC method
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.SetScheduleRequest> setSchedule(
-        io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.SetScheduleResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.SetScheduleRequest> setSchedule(
+        io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.SetScheduleResponse> responseObserver) {
       return asyncClientStreamingCall(
           getChannel().newCall(getSetScheduleMethod(), getCallOptions()), responseObserver);
     }
@@ -222,7 +222,7 @@ public final class SmartLightingGrpc {
      *Unary RPC method
      * </pre>
      */
-    public com.smart_home.SmartLightingOuterClass.ToggleLightResponse toggleLight(com.smart_home.SmartLightingOuterClass.ToggleLightRequest request) {
+    public grpc_files.SmartLightingOuterClass.ToggleLightResponse toggleLight(grpc_files.SmartLightingOuterClass.ToggleLightRequest request) {
       return blockingUnaryCall(
           getChannel(), getToggleLightMethod(), getCallOptions(), request);
     }
@@ -251,8 +251,8 @@ public final class SmartLightingGrpc {
      *Unary RPC method
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.smart_home.SmartLightingOuterClass.ToggleLightResponse> toggleLight(
-        com.smart_home.SmartLightingOuterClass.ToggleLightRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc_files.SmartLightingOuterClass.ToggleLightResponse> toggleLight(
+        grpc_files.SmartLightingOuterClass.ToggleLightRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getToggleLightMethod(), getCallOptions()), request);
     }
@@ -279,8 +279,8 @@ public final class SmartLightingGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_TOGGLE_LIGHT:
-          serviceImpl.toggleLight((com.smart_home.SmartLightingOuterClass.ToggleLightRequest) request,
-              (io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.ToggleLightResponse>) responseObserver);
+          serviceImpl.toggleLight((grpc_files.SmartLightingOuterClass.ToggleLightRequest) request,
+              (io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.ToggleLightResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -294,7 +294,7 @@ public final class SmartLightingGrpc {
       switch (methodId) {
         case METHODID_SET_SCHEDULE:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.setSchedule(
-              (io.grpc.stub.StreamObserver<com.smart_home.SmartLightingOuterClass.SetScheduleResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<grpc_files.SmartLightingOuterClass.SetScheduleResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -307,7 +307,7 @@ public final class SmartLightingGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.smart_home.SmartLightingOuterClass.getDescriptor();
+      return grpc_files.SmartLightingOuterClass.getDescriptor();
     }
 
     @java.lang.Override

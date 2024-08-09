@@ -1,4 +1,4 @@
-package com.smart_home;
+package grpc_files;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -27,30 +27,30 @@ public final class SmartThermostatGrpc {
   public static final String SERVICE_NAME = "SmartThermostat";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest,
-      com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse> getGetTemperatureMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.GetTemperatureRequest,
+      grpc_files.SmartThermostatOuterClass.GetTemperatureResponse> getGetTemperatureMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetTemperature",
-      requestType = com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest.class,
-      responseType = com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse.class,
+      requestType = grpc_files.SmartThermostatOuterClass.GetTemperatureRequest.class,
+      responseType = grpc_files.SmartThermostatOuterClass.GetTemperatureResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest,
-      com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse> getGetTemperatureMethod() {
-    io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest, com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse> getGetTemperatureMethod;
+  public static io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.GetTemperatureRequest,
+      grpc_files.SmartThermostatOuterClass.GetTemperatureResponse> getGetTemperatureMethod() {
+    io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.GetTemperatureRequest, grpc_files.SmartThermostatOuterClass.GetTemperatureResponse> getGetTemperatureMethod;
     if ((getGetTemperatureMethod = SmartThermostatGrpc.getGetTemperatureMethod) == null) {
       synchronized (SmartThermostatGrpc.class) {
         if ((getGetTemperatureMethod = SmartThermostatGrpc.getGetTemperatureMethod) == null) {
           SmartThermostatGrpc.getGetTemperatureMethod = getGetTemperatureMethod = 
-              io.grpc.MethodDescriptor.<com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest, com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc_files.SmartThermostatOuterClass.GetTemperatureRequest, grpc_files.SmartThermostatOuterClass.GetTemperatureResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "SmartThermostat", "GetTemperature"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest.getDefaultInstance()))
+                  grpc_files.SmartThermostatOuterClass.GetTemperatureRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse.getDefaultInstance()))
+                  grpc_files.SmartThermostatOuterClass.GetTemperatureResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SmartThermostatMethodDescriptorSupplier("GetTemperature"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class SmartThermostatGrpc {
      return getGetTemperatureMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest,
-      com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse> getSetTemperatureMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.SetTemperatureRequest,
+      grpc_files.SmartThermostatOuterClass.SetTemperatureResponse> getSetTemperatureMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SetTemperature",
-      requestType = com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest.class,
-      responseType = com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse.class,
+      requestType = grpc_files.SmartThermostatOuterClass.SetTemperatureRequest.class,
+      responseType = grpc_files.SmartThermostatOuterClass.SetTemperatureResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest,
-      com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse> getSetTemperatureMethod() {
-    io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest, com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse> getSetTemperatureMethod;
+  public static io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.SetTemperatureRequest,
+      grpc_files.SmartThermostatOuterClass.SetTemperatureResponse> getSetTemperatureMethod() {
+    io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.SetTemperatureRequest, grpc_files.SmartThermostatOuterClass.SetTemperatureResponse> getSetTemperatureMethod;
     if ((getSetTemperatureMethod = SmartThermostatGrpc.getSetTemperatureMethod) == null) {
       synchronized (SmartThermostatGrpc.class) {
         if ((getSetTemperatureMethod = SmartThermostatGrpc.getSetTemperatureMethod) == null) {
           SmartThermostatGrpc.getSetTemperatureMethod = getSetTemperatureMethod = 
-              io.grpc.MethodDescriptor.<com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest, com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc_files.SmartThermostatOuterClass.SetTemperatureRequest, grpc_files.SmartThermostatOuterClass.SetTemperatureResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "SmartThermostat", "SetTemperature"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest.getDefaultInstance()))
+                  grpc_files.SmartThermostatOuterClass.SetTemperatureRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse.getDefaultInstance()))
+                  grpc_files.SmartThermostatOuterClass.SetTemperatureResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SmartThermostatMethodDescriptorSupplier("SetTemperature"))
                   .build();
           }
@@ -91,30 +91,30 @@ public final class SmartThermostatGrpc {
      return getSetTemperatureMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest,
-      com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse> getAdjustTemperatureMethod;
+  private static volatile io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest,
+      grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse> getAdjustTemperatureMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AdjustTemperature",
-      requestType = com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest.class,
-      responseType = com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse.class,
+      requestType = grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest.class,
+      responseType = grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest,
-      com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse> getAdjustTemperatureMethod() {
-    io.grpc.MethodDescriptor<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest, com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse> getAdjustTemperatureMethod;
+  public static io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest,
+      grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse> getAdjustTemperatureMethod() {
+    io.grpc.MethodDescriptor<grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest, grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse> getAdjustTemperatureMethod;
     if ((getAdjustTemperatureMethod = SmartThermostatGrpc.getAdjustTemperatureMethod) == null) {
       synchronized (SmartThermostatGrpc.class) {
         if ((getAdjustTemperatureMethod = SmartThermostatGrpc.getAdjustTemperatureMethod) == null) {
           SmartThermostatGrpc.getAdjustTemperatureMethod = getAdjustTemperatureMethod = 
-              io.grpc.MethodDescriptor.<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest, com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse>newBuilder()
+              io.grpc.MethodDescriptor.<grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest, grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "SmartThermostat", "AdjustTemperature"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest.getDefaultInstance()))
+                  grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse.getDefaultInstance()))
+                  grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SmartThermostatMethodDescriptorSupplier("AdjustTemperature"))
                   .build();
           }
@@ -155,8 +155,8 @@ public final class SmartThermostatGrpc {
      * RPC method to get the current temperature
      * </pre>
      */
-    public void getTemperature(com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse> responseObserver) {
+    public void getTemperature(grpc_files.SmartThermostatOuterClass.GetTemperatureRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.GetTemperatureResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getGetTemperatureMethod(), responseObserver);
     }
 
@@ -165,8 +165,8 @@ public final class SmartThermostatGrpc {
      * RPC method to set a specific temperature
      * </pre>
      */
-    public void setTemperature(com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse> responseObserver) {
+    public void setTemperature(grpc_files.SmartThermostatOuterClass.SetTemperatureRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.SetTemperatureResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getSetTemperatureMethod(), responseObserver);
     }
 
@@ -175,8 +175,8 @@ public final class SmartThermostatGrpc {
      * Bidirectional streaming RPC method to adjust the temperature
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest> adjustTemperature(
-        io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest> adjustTemperature(
+        io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse> responseObserver) {
       return asyncUnimplementedStreamingCall(getAdjustTemperatureMethod(), responseObserver);
     }
 
@@ -186,22 +186,22 @@ public final class SmartThermostatGrpc {
             getGetTemperatureMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest,
-                com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse>(
+                grpc_files.SmartThermostatOuterClass.GetTemperatureRequest,
+                grpc_files.SmartThermostatOuterClass.GetTemperatureResponse>(
                   this, METHODID_GET_TEMPERATURE)))
           .addMethod(
             getSetTemperatureMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest,
-                com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse>(
+                grpc_files.SmartThermostatOuterClass.SetTemperatureRequest,
+                grpc_files.SmartThermostatOuterClass.SetTemperatureResponse>(
                   this, METHODID_SET_TEMPERATURE)))
           .addMethod(
             getAdjustTemperatureMethod(),
             asyncBidiStreamingCall(
               new MethodHandlers<
-                com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest,
-                com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse>(
+                grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest,
+                grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse>(
                   this, METHODID_ADJUST_TEMPERATURE)))
           .build();
     }
@@ -230,8 +230,8 @@ public final class SmartThermostatGrpc {
      * RPC method to get the current temperature
      * </pre>
      */
-    public void getTemperature(com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse> responseObserver) {
+    public void getTemperature(grpc_files.SmartThermostatOuterClass.GetTemperatureRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.GetTemperatureResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetTemperatureMethod(), getCallOptions()), request, responseObserver);
     }
@@ -241,8 +241,8 @@ public final class SmartThermostatGrpc {
      * RPC method to set a specific temperature
      * </pre>
      */
-    public void setTemperature(com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest request,
-        io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse> responseObserver) {
+    public void setTemperature(grpc_files.SmartThermostatOuterClass.SetTemperatureRequest request,
+        io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.SetTemperatureResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSetTemperatureMethod(), getCallOptions()), request, responseObserver);
     }
@@ -252,8 +252,8 @@ public final class SmartThermostatGrpc {
      * Bidirectional streaming RPC method to adjust the temperature
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureRequest> adjustTemperature(
-        io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.AdjustTemperatureRequest> adjustTemperature(
+        io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse> responseObserver) {
       return asyncBidiStreamingCall(
           getChannel().newCall(getAdjustTemperatureMethod(), getCallOptions()), responseObserver);
     }
@@ -282,7 +282,7 @@ public final class SmartThermostatGrpc {
      * RPC method to get the current temperature
      * </pre>
      */
-    public com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse getTemperature(com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest request) {
+    public grpc_files.SmartThermostatOuterClass.GetTemperatureResponse getTemperature(grpc_files.SmartThermostatOuterClass.GetTemperatureRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetTemperatureMethod(), getCallOptions(), request);
     }
@@ -292,7 +292,7 @@ public final class SmartThermostatGrpc {
      * RPC method to set a specific temperature
      * </pre>
      */
-    public com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse setTemperature(com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest request) {
+    public grpc_files.SmartThermostatOuterClass.SetTemperatureResponse setTemperature(grpc_files.SmartThermostatOuterClass.SetTemperatureRequest request) {
       return blockingUnaryCall(
           getChannel(), getSetTemperatureMethod(), getCallOptions(), request);
     }
@@ -321,8 +321,8 @@ public final class SmartThermostatGrpc {
      * RPC method to get the current temperature
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse> getTemperature(
-        com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc_files.SmartThermostatOuterClass.GetTemperatureResponse> getTemperature(
+        grpc_files.SmartThermostatOuterClass.GetTemperatureRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetTemperatureMethod(), getCallOptions()), request);
     }
@@ -332,8 +332,8 @@ public final class SmartThermostatGrpc {
      * RPC method to set a specific temperature
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse> setTemperature(
-        com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<grpc_files.SmartThermostatOuterClass.SetTemperatureResponse> setTemperature(
+        grpc_files.SmartThermostatOuterClass.SetTemperatureRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getSetTemperatureMethod(), getCallOptions()), request);
     }
@@ -361,12 +361,12 @@ public final class SmartThermostatGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_TEMPERATURE:
-          serviceImpl.getTemperature((com.smart_home.SmartThermostatOuterClass.GetTemperatureRequest) request,
-              (io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.GetTemperatureResponse>) responseObserver);
+          serviceImpl.getTemperature((grpc_files.SmartThermostatOuterClass.GetTemperatureRequest) request,
+              (io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.GetTemperatureResponse>) responseObserver);
           break;
         case METHODID_SET_TEMPERATURE:
-          serviceImpl.setTemperature((com.smart_home.SmartThermostatOuterClass.SetTemperatureRequest) request,
-              (io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.SetTemperatureResponse>) responseObserver);
+          serviceImpl.setTemperature((grpc_files.SmartThermostatOuterClass.SetTemperatureRequest) request,
+              (io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.SetTemperatureResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -380,7 +380,7 @@ public final class SmartThermostatGrpc {
       switch (methodId) {
         case METHODID_ADJUST_TEMPERATURE:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.adjustTemperature(
-              (io.grpc.stub.StreamObserver<com.smart_home.SmartThermostatOuterClass.AdjustTemperatureResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<grpc_files.SmartThermostatOuterClass.AdjustTemperatureResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -393,7 +393,7 @@ public final class SmartThermostatGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.smart_home.SmartThermostatOuterClass.getDescriptor();
+      return grpc_files.SmartThermostatOuterClass.getDescriptor();
     }
 
     @java.lang.Override

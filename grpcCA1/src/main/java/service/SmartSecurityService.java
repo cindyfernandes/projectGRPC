@@ -1,11 +1,10 @@
 package service;
 
-import com.smart_home.SmartSecurityGrpc.SmartSecurityImplBase;
-import com.smart_home.SmartSecurityOuterClass.ArmSystemRequest;
-import com.smart_home.SmartSecurityOuterClass.ArmSystemResponse;
-import com.smart_home.SmartSecurityOuterClass.GetSensorStatusRequest;
-import com.smart_home.SmartSecurityOuterClass.GetSensorStatusResponse;
-
+import grpc_files.SmartSecurityGrpc.SmartSecurityImplBase;
+import grpc_files.SmartSecurityOuterClass.ArmSystemRequest;
+import grpc_files.SmartSecurityOuterClass.ArmSystemResponse;
+import grpc_files.SmartSecurityOuterClass.GetSensorStatusRequest;
+import grpc_files.SmartSecurityOuterClass.GetSensorStatusResponse;
 import io.grpc.stub.StreamObserver;
 
 public class SmartSecurityService  extends SmartSecurityImplBase {

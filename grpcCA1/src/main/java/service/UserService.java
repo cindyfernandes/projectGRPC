@@ -1,11 +1,10 @@
 package service;
 
-import com.smart_home.SmartLightingGrpc;
-import com.smart_home.SmartLightingOuterClass.SetScheduleRequest;
-import com.smart_home.SmartLightingOuterClass.SetScheduleResponse;
-import com.smart_home.SmartLightingOuterClass.ToggleLightRequest;
-import com.smart_home.SmartLightingOuterClass.ToggleLightResponse;
-
+import grpc_files.SmartLightingGrpc;
+import grpc_files.SmartLightingOuterClass.SetScheduleRequest;
+import grpc_files.SmartLightingOuterClass.SetScheduleResponse;
+import grpc_files.SmartLightingOuterClass.ToggleLightRequest;
+import grpc_files.SmartLightingOuterClass.ToggleLightResponse;
 import io.grpc.stub.StreamObserver;
 
 public class UserService extends SmartLightingGrpc.SmartLightingImplBase {
