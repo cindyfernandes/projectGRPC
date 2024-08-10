@@ -16,7 +16,7 @@ public class SmartLightingServer {
     public static void main(String[] args) throws IOException, InterruptedException {
         
     	// Define the server port
-        int port = 50051;
+        int port = 50050;
 
         // Initialize the logger
         Logger logger = Logger.getLogger(SmartLightingServer.class.getName());
